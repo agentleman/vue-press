@@ -1,6 +1,7 @@
 module.exports = {
     themeConfig: {
         navbar: true,
+        base:"/vue-press/",
         logo: '/assets/img/logo.jpg',
         nav: [
             { text: 'Home', link: '/' },
