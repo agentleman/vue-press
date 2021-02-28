@@ -2,18 +2,28 @@ module.exports = {
   themeConfig: {
     navbar: true,
     base: "/vue-press/",
-    logo: "/assets/img/logo.jpg",
+    title: '灵海网络',
+    // logo: "/assets/img/logo.jpg",
+    // theme: 'vuepress-theme-note',
+    // theme:'antdocs',
+    theme: '@vuepress/blog',
+
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Guide", link: "/guide/" },
+      { text: "首页", link: "/" },
+
       {
-        text: "External",
+        text: "前端",
         ariaLabel: "External Menu",
         items: [
           { text: "Chinese", link: "/guide/" },
           { text: "Japanese", link: "/language/japanese/" },
         ],
       },
+      // { text: "NodeJS", link: "/node/" },
+      // { text: "数据库", link: "/guide/" },
+      // { text: "服务器", link: "/guide/" },
+      // { text: "计算机基础", link: "/guide/" },
+
     ],
     // sidebar: [
     //     '/',
@@ -22,4 +32,7 @@ module.exports = {
     // ]
     // sidebar: 'auto'
   },
+  markdown: {
+    lineNumbers: true,//代码块行号配置
+  }
 };

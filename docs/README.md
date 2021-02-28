@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: ./.vuepress/public/assets/img/hero.png
+# heroImage: ./.vuepress/public/assets/img/hero.png
 heroText: hero
 tagline: hero
 # actionText: 快速上手 →
