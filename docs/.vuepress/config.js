@@ -2,7 +2,7 @@ module.exports = {
   themeConfig: {
     navbar: true,
     base: "/vue-press/",
-    title: '灵海网络',
+    title: '灵海网络333',
     // logo: "/assets/img/logo.jpg",
     // theme: 'vuepress-theme-note',
     // theme:'antdocs',
