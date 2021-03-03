@@ -5,8 +5,6 @@ module.exports = {
 
   themeConfig: {
     navbar: true,
-   
-    // logo: "/assets/img/logo.jpg",
     // theme: 'vuepress-theme-note',
     // theme:'antdocs',
     theme: '@vuepress/blog',
