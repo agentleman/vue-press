@@ -1,8 +1,11 @@
 module.exports = {
+  title: 'Hello VuePress',
+  description: 'Just playing around',
+  base: "/",
+
   themeConfig: {
     navbar: true,
-    base: "/vue-press/",
-    title: '灵海网络333',
+   
     // logo: "/assets/img/logo.jpg",
     // theme: 'vuepress-theme-note',
     // theme:'antdocs',
