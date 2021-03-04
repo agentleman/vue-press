@@ -1,13 +1,13 @@
 module.exports = {
-  title: '灵海科技网络',
-  description: 'Just playing around',
+  // title: '灵海科技网络',
+  description: "Just playing around",
   base: "/vue-press/",
 
   themeConfig: {
     navbar: true,
     // theme: 'vuepress-theme-note',
     // theme:'antdocs',
-    theme: '@vuepress/blog',
+    theme: "awesome",
 
     nav: [
       { text: "首页", link: "/" },
@@ -16,24 +16,15 @@ module.exports = {
         text: "前端",
         ariaLabel: "External Menu",
         items: [
-          { text: "Chinese", link: "/guide/" },
-          { text: "Japanese", link: "/language/japanese/" },
+          { text: "model", link: "/guide/" },
+          { text: "docs", link: "/Docs/" },
+          { text: "git", link: "/git/" },
         ],
       },
-      // { text: "NodeJS", link: "/node/" },
-      // { text: "数据库", link: "/guide/" },
-      // { text: "服务器", link: "/guide/" },
-      // { text: "计算机基础", link: "/guide/" },
-
     ],
-    // sidebar: [
-    //     '/',
-    //     '/page-a',
-    //     ['/page-b', 'Explicit link text']
-    // ]
-    // sidebar: 'auto'
   },
   markdown: {
-    lineNumbers: true,//代码块行号配置
-  }
+    lineNumbers: true, //代码块行号配置
+  },
+  plugins: [["vuepress-plugin-code-copy", true]],
 };
