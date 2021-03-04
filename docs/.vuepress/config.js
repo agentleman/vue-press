@@ -1,7 +1,7 @@
 module.exports = {
   // title: '灵海科技网络',
   description: "Just playing around",
-  base: "/vue-press/",
+  base: "/",
 
   themeConfig: {
     navbar: true,
