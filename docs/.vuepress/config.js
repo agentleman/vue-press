@@ -19,6 +19,8 @@ module.exports = {
           { text: "model", link: "/guide/" },
           { text: "docs", link: "/Docs/" },
           { text: "git", link: "/git/" },
+          { text: "安全", link: "/safety/" },
+          { text: "js", link: "/javascript/swiper.md" },
         ],
       },
     ],

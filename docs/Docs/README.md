@@ -13,7 +13,7 @@ BCDEDIT 设置启动数据库中的属性以控制启动加载。
 
 #### 删除一个或者数个文件
 
-```
+```sh
 del /?
 
 DEL [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
@@ -22,7 +22,7 @@ ERASE [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
 
 #### 查看目录
 
-```
+```sh
 dir
 
 DEL [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
@@ -31,7 +31,7 @@ ERASE [/P] [/F] [/S] [/Q] [/A[[:]attributes]] names
 
 #### 递归查看目录 tree
 
-```
+```sh
 tree
 文件夹 PATH 列表
 卷序列号为 0003-F93C
@@ -65,7 +65,7 @@ ecplorer ..
 
 #### 打开指定目录
 
-```
+```sh
 ecplorer dirName
 
 ```
@@ -92,7 +92,7 @@ rd d/ test
 
 #### 查看文件
 
-```
+```sh
 $ type index.html
 <!DOCTYPE html>
 <html>
@@ -138,7 +138,7 @@ ipconfig
 
 #### 查看网络连接情况
 
-```
+```sh
 ping baidu.com
 
 ping 168.193.3.45
@@ -152,14 +152,14 @@ rd d/ test
 
 #### 查看执行程序安装路径
 
-```
+```sh
 where node
 E:\Program Files\nodejs\node.exe
 ```
 
 #### 查看端口占用情况
 
-```
+```sh
 netstat -aon|findstr "3001"
   TCP    0.0.0.0:3001           0.0.0.0:0              LISTENING       1524
   TCP    127.0.0.1:3001         127.0.0.1:49599        ESTABLISHED     1524
@@ -168,14 +168,14 @@ netstat -aon|findstr "3001"
 
 #### 查看任务信息
 
-```
+```sh
 $ tasklist | findstr "5524"
 chrome.exe                    5524 Console                    3    127,512 K
 ```
 
 #### 杀死进程
 
-```
+```sh
 taskkill /pid 5524
 ```
 

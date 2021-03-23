@@ -40,7 +40,7 @@ $ git add [file1] [file2] ...
 
 # 添加指定目录到暂存区，包括子目录
 $ git add [dir]
-
+********___~~~~___********
 # 添加当前目录的所有文件到暂存区
 $ git add .
 
@@ -61,7 +61,7 @@ $ git mv [file-original] [file-renamed]
 ### 四、代码提交
 
 ```sh
-# 提交暂存区到仓库区
+# 提交暂存区到********仓库区
 $ git commit -m [message]
 
 # 提交暂存区的指定文件到仓库区
