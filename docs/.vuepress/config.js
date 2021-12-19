@@ -21,6 +21,7 @@ module.exports = {
           { text: "git", link: "/git/" },
           { text: "安全", link: "/safety/" },
           { text: "js", link: "/javascript/swiper.md" },
+          { text: "面试", link: "/javascript/test.md" },
         ],
       },
     ],
