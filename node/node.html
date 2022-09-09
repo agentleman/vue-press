@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>VuePress</title>
+    <title>node版本升级</title>
     <meta name="generator" content="VuePress 1.8.2">
     
     <meta name="description" content="Just playing around">
     
-    <link rel="preload" href="/assets/css/0.styles.280e3266.css" as="style"><link rel="preload" href="/assets/js/app.9a97b0eb.js" as="script"><link rel="preload" href="/assets/js/2.0132f05f.js" as="script"><link rel="preload" href="/assets/js/9.2ce28ebf.js" as="script"><link rel="prefetch" href="/assets/js/10.f74c541b.js"><link rel="prefetch" href="/assets/js/11.a9b42523.js"><link rel="prefetch" href="/assets/js/12.dc269f28.js"><link rel="prefetch" href="/assets/js/13.3de0a4ad.js"><link rel="prefetch" href="/assets/js/14.1bb0acb8.js"><link rel="prefetch" href="/assets/js/15.329ced43.js"><link rel="prefetch" href="/assets/js/16.4e7efb32.js"><link rel="prefetch" href="/assets/js/17.26816152.js"><link rel="prefetch" href="/assets/js/3.452f9470.js"><link rel="prefetch" href="/assets/js/4.c19288cf.js"><link rel="prefetch" href="/assets/js/5.5302b3b7.js"><link rel="prefetch" href="/assets/js/6.31352850.js"><link rel="prefetch" href="/assets/js/7.d796b796.js"><link rel="prefetch" href="/assets/js/8.5a1be5c8.js">
+    <link rel="preload" href="/assets/css/0.styles.280e3266.css" as="style"><link rel="preload" href="/assets/js/app.9a97b0eb.js" as="script"><link rel="preload" href="/assets/js/2.0132f05f.js" as="script"><link rel="preload" href="/assets/js/16.4e7efb32.js" as="script"><link rel="prefetch" href="/assets/js/10.f74c541b.js"><link rel="prefetch" href="/assets/js/11.a9b42523.js"><link rel="prefetch" href="/assets/js/12.dc269f28.js"><link rel="prefetch" href="/assets/js/13.3de0a4ad.js"><link rel="prefetch" href="/assets/js/14.1bb0acb8.js"><link rel="prefetch" href="/assets/js/15.329ced43.js"><link rel="prefetch" href="/assets/js/17.26816152.js"><link rel="prefetch" href="/assets/js/3.452f9470.js"><link rel="prefetch" href="/assets/js/4.c19288cf.js"><link rel="prefetch" href="/assets/js/5.5302b3b7.js"><link rel="prefetch" href="/assets/js/6.31352850.js"><link rel="prefetch" href="/assets/js/7.d796b796.js"><link rel="prefetch" href="/assets/js/8.5a1be5c8.js"><link rel="prefetch" href="/assets/js/9.2ce28ebf.js">
     <link rel="stylesheet" href="/assets/css/0.styles.280e3266.css">
   </head>
   <body>
@@ -44,7 +44,18 @@
   docs
 </a></li><li class="dropdown-item"><!----> <a href="/linux/" class="nav-link">
   Linux
-</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.9a97b0eb.js" defer></script><script src="/assets/js/2.0132f05f.js" defer></script><script src="/assets/js/9.2ce28ebf.js" defer></script>
+</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="node版本升级"><a href="#node版本升级" class="header-anchor">#</a> node版本升级</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># Linux下安装n模块</span>
+$ <span class="token function">npm</span> <span class="token function">install</span> -g n
+
+<span class="token comment"># 清除缓存</span>
+$ <span class="token function">sudo</span> <span class="token function">npm</span> cache clean -f
+
+<span class="token comment">#在node.js目录下是用n模块更新版本(linux系统)</span>
+$ n stable
+
+<span class="token comment">#windows版本中只能重新安装覆盖</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9a97b0eb.js" defer></script><script src="/assets/js/2.0132f05f.js" defer></script><script src="/assets/js/16.4e7efb32.js" defer></script>
   </body>
 </html>
