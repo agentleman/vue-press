@@ -17,11 +17,13 @@ module.exports = {
         ariaLabel: "External Menu",
         items: [
           { text: "model", link: "/guide/" },
-          { text: "docs", link: "/Docs/" },
           { text: "git", link: "/git/" },
           { text: "安全", link: "/safety/" },
           { text: "js", link: "/javascript/swiper.md" },
-          { text: "面试", link: "/javascript/test.md" },
+          { text: "算法", link: "/javascript/test.md" },
+          { text: "docs", link: "/Docs/" },
+          { text: "Linux", link: "/linux/" },
+
         ],
       },
     ],

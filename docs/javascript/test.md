@@ -1,19 +1,9 @@
 # test_niuke
 
-## https://www.nowcoder.com/test/question/ae1ce1fdd4a74ad5bba637c0f0c49b00?pid=34743151&tid=50373577
-
-```html
-
-```
-
-```css
-.red {
-  backgroundcolor: red;
-}
-```
-
 ```js
 '2'+3+4 == '234'
+
+<https://www.nowcoder.com/test/question/ae1ce1fdd4a74ad5bba637c0f0c49b00?pid=34743151&tid=50373577>
 
 用户更改表单元素Select中的值时,触发的事件有  onChange onMouseOver onFocus onClick
 javascript内置对象不包含windowd
