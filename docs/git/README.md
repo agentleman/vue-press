@@ -250,6 +250,9 @@ $ git push [remote] --force
 
 # 推送所有分支到远程仓库
 $ git push [remote] --all
+
+# 本地仓库关联到远程仓库
+git config --global --add safe.directory '项目本地路径'
 ```
 
 ### 九、撤销
