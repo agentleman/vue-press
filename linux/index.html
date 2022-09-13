@@ -8,7 +8,7 @@
     
     <meta name="description" content="Just playing around">
     
-    <link rel="preload" href="/assets/css/0.styles.280e3266.css" as="style"><link rel="preload" href="/assets/js/app.a297cd46.js" as="script"><link rel="preload" href="/assets/js/2.0132f05f.js" as="script"><link rel="preload" href="/assets/js/15.09dfd02b.js" as="script"><link rel="prefetch" href="/assets/js/10.57c16afe.js"><link rel="prefetch" href="/assets/js/11.a9b42523.js"><link rel="prefetch" href="/assets/js/12.dc269f28.js"><link rel="prefetch" href="/assets/js/13.3de0a4ad.js"><link rel="prefetch" href="/assets/js/14.1bb0acb8.js"><link rel="prefetch" href="/assets/js/16.4e7efb32.js"><link rel="prefetch" href="/assets/js/17.26816152.js"><link rel="prefetch" href="/assets/js/3.452f9470.js"><link rel="prefetch" href="/assets/js/4.c19288cf.js"><link rel="prefetch" href="/assets/js/5.5302b3b7.js"><link rel="prefetch" href="/assets/js/6.31352850.js"><link rel="prefetch" href="/assets/js/7.d796b796.js"><link rel="prefetch" href="/assets/js/8.5a1be5c8.js"><link rel="prefetch" href="/assets/js/9.2ce28ebf.js">
+    <link rel="preload" href="/assets/css/0.styles.280e3266.css" as="style"><link rel="preload" href="/assets/js/app.1953b10e.js" as="script"><link rel="preload" href="/assets/js/2.0132f05f.js" as="script"><link rel="preload" href="/assets/js/15.0ae5f8ba.js" as="script"><link rel="prefetch" href="/assets/js/10.57c16afe.js"><link rel="prefetch" href="/assets/js/11.a9b42523.js"><link rel="prefetch" href="/assets/js/12.dc269f28.js"><link rel="prefetch" href="/assets/js/13.3de0a4ad.js"><link rel="prefetch" href="/assets/js/14.1bb0acb8.js"><link rel="prefetch" href="/assets/js/16.4e7efb32.js"><link rel="prefetch" href="/assets/js/17.26816152.js"><link rel="prefetch" href="/assets/js/3.452f9470.js"><link rel="prefetch" href="/assets/js/4.c19288cf.js"><link rel="prefetch" href="/assets/js/5.5302b3b7.js"><link rel="prefetch" href="/assets/js/6.31352850.js"><link rel="prefetch" href="/assets/js/7.d796b796.js"><link rel="prefetch" href="/assets/js/8.5a1be5c8.js"><link rel="prefetch" href="/assets/js/9.2ce28ebf.js">
     <link rel="stylesheet" href="/assets/css/0.styles.280e3266.css">
   </head>
   <body>
@@ -51,7 +51,19 @@
 </code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="firewalld是centos-8上的默认防火墙解决方案。在安装过程中-nginx使用预定义的规则创建防火墙服务文件-以允许访问http-80-和https-443-端口。使用以下命令永久打开必要的端口"><a href="#firewalld是centos-8上的默认防火墙解决方案。在安装过程中-nginx使用预定义的规则创建防火墙服务文件-以允许访问http-80-和https-443-端口。使用以下命令永久打开必要的端口" class="header-anchor">#</a> FirewallD是Centos 8上的默认防火墙解决方案。在安装过程中，Nginx使用预定义的规则创建防火墙服务文件，以允许访问HTTP（80）和HTTPS（443）端口。使用以下命令永久打开必要的端口：</h4> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">sudo</span> firewall-cmd --permanent --zone<span class="token operator">=</span>public --add-service<span class="token operator">=</span>http
 <span class="token function">sudo</span> firewall-cmd --permanent --zone<span class="token operator">=</span>public --add-service<span class="token operator">=</span>https
 <span class="token function">sudo</span> firewall-cmd --reload
-</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.a297cd46.js" defer></script><script src="/assets/js/2.0132f05f.js" defer></script><script src="/assets/js/15.09dfd02b.js" defer></script>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="nginx关闭"><a href="#nginx关闭" class="header-anchor">#</a> nginx关闭</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>nginx -s stop  :快速停止nginx
+nginx -s quit  ：完整有序的停止nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h4 id="linux删除文件夹目录"><a href="#linux删除文件夹目录" class="header-anchor">#</a> linux删除文件夹目录</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>rm -rf '文件名'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="linux回到根目录"><a href="#linux回到根目录" class="header-anchor">#</a> Linux回到根目录</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>cd /
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="forever守护node进程"><a href="#forever守护node进程" class="header-anchor">#</a> forever守护node进程</h4> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">//显示所有运行的服务</span>
+forever list
+<span class="token comment">//停止所有运行的node App</span>
+forever stopall
+<span class="token comment">//重新启动所有</span>
+forever restartall
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="linux查看进程、线程"><a href="#linux查看进程、线程" class="header-anchor">#</a> Linux查看进程、线程</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>ps -ef   进程
+ps -efL  线程
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1953b10e.js" defer></script><script src="/assets/js/2.0132f05f.js" defer></script><script src="/assets/js/15.0ae5f8ba.js" defer></script>
   </body>
 </html>
