@@ -52,6 +52,29 @@ ps -ef   进程
 ps -efL  线程
 ```
 
+
+#### 使用yum命令进行卸载java
+```sh
+yum remove java-1.6.0-openjdk*
+
+yum remove java-1.7.0-openjdk*
+```
+
+#### java安装
+```sh
+sudo dnf install java-1.8.0-openjdk-devel
+```
+
+#### 查看java安装信息
+```sh 
+rpm -qa|grep java
+```
+
+#### 查看可安装的Java版本
+```sh 
+yum -y list java*
+```
+
 #### 安装最新的Jenkins稳定版本：
 ```sh
 sudo dnf install jenkins
@@ -64,24 +87,10 @@ sudo yum install jenkins
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 ```
+
 #### 检查Jenkins是否正在运行
 ```sh
 systemctl status jenkins
-```
-#### 使用yum命令进行卸载java
-```sh
-yum remove java-1.6.0-openjdk*
-
-yum remove java-1.7.0-openjdk*
-```
-#### java安装
-```sh
-sudo dnf install java-1.8.0-openjdk-devel
-```
-
-#### 查看java安装信息
-```sh 
-rpm -qa|grep java
 ```
 
 #### rpm卸载jenkins
@@ -98,15 +107,22 @@ rpm -ql jenkins
 ```sh
 find / -iname jenkins | xargs -n 1000 rm -rf
 ```
+
 #### 删除/webapps/jenkins下所有文件
 ```sh
 rm -rf jenkins
 ```
 
-#### 删除配置文件
+#### 删除jenkins配置文件
 ```sh
 rm -rf /root/.jenkins/
 ```
+
+#### 关闭Jenkins服务
+```sh
+service jenkins stop
+```
+
 
 
 
