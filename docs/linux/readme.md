@@ -55,6 +55,8 @@ ps -efL  线程
 #### 安装最新的Jenkins稳定版本：
 ```sh
 sudo dnf install jenkins
+或
+sudo yum install jenkins
 ```
 
 #### 启动Jenkins服务并启用它以在系统引导时启动：
@@ -62,7 +64,7 @@ sudo dnf install jenkins
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 ```
-检查Jenkins是否正在运行
+#### 检查Jenkins是否正在运行
 ```sh
 systemctl status jenkins
 ```
@@ -72,6 +74,11 @@ yum remove java-1.6.0-openjdk*
 
 yum remove java-1.7.0-openjdk*
 ```
+#### java安装
+```sh
+sudo dnf install java-1.8.0-openjdk-devel
+```
+
 #### 查看java安装信息
 ```sh 
 rpm -qa|grep java
@@ -90,6 +97,15 @@ rpm -ql jenkins
 #### 彻底删除jenkins残留文件
 ```sh
 find / -iname jenkins | xargs -n 1000 rm -rf
+```
+#### 删除/webapps/jenkins下所有文件
+```sh
+rm -rf jenkins
+```
+
+#### 删除配置文件
+```sh
+rm -rf /root/.jenkins/
 ```
 
 
