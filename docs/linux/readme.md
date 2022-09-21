@@ -47,12 +47,50 @@ forever restartall
 ```
 
 #### Linux查看进程、线程
-```
+```sh
 ps -ef   进程
 ps -efL  线程
 ```
 
+#### 安装最新的Jenkins稳定版本：
+```sh
+sudo dnf install jenkins
+```
 
+#### 启动Jenkins服务并启用它以在系统引导时启动：
+```sh
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+```
+检查Jenkins是否正在运行
+```sh
+systemctl status jenkins
+```
+#### 使用yum命令进行卸载java
+```sh
+yum remove java-1.6.0-openjdk*
+
+yum remove java-1.7.0-openjdk*
+```
+#### 查看java安装信息
+```sh 
+rpm -qa|grep java
+```
+
+#### rpm卸载jenkins
+```sh
+rpm -e jenkins
+```
+
+#### 检查是否卸载jenkins成功
+```sh
+rpm -ql jenkins
+```
+
+#### 彻底删除jenkins残留文件
+```sh
+find / -iname jenkins | xargs -n 1000 rm -rf
+```
 
 
 
